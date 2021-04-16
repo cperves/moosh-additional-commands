@@ -1,13 +1,13 @@
 <?php
+
 /**
- * moosh - Moodle Shell command
- *
- * @author Céline Pervès cperves@unistra.fr
- * @copyright Université de Strasbourg unistra.fr
+ * moosh - Moodle Shell
+ * @copyright 2021 unistra {@link http://unistra.fr}
+ * @author 2021 Céline Perves <cperves@unistra.fr>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace Moosh\Command\Moodle35\My;
+namespace Moosh\Command\Moodle39\My;
 
 
 use Moosh\MooshCommand;

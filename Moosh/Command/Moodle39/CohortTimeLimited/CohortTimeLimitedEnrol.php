@@ -1,12 +1,13 @@
 <?php
+
 /**
  * moosh - Moodle Shell
- *
- * @copyright  2012 onwards Tomasz Muras
+ * @copyright 2021 unistra {@link http://unistra.fr}
+ * @author 2021 Céline Perves <cperves@unistra.fr>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace Moosh\Command\Moodle35\CohortTimeLimited;
+namespace Moosh\Command\Moodle39\CohortTimeLimited;
 use Moosh\MooshCommand;
 
 class CohortTimeLimitedEnrol extends MooshCommand
