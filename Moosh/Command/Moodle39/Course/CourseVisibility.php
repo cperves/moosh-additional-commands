@@ -2,11 +2,12 @@
 /**
  * moosh - Moodle Shell
  *
- * @copyright  2012 onwards Tomasz Muras
+ * @copyright 2021 unistra {@link http://unistra.fr}
+ * @author 2021 Céline Perves <cperves@unistra.fr>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace Moosh\Command\Moodle23\Course;
+namespace Moosh\Command\Moodle39\Course;
 use Moosh\MooshCommand;
 
 class CourseVisibility extends MooshCommand
