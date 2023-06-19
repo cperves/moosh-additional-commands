@@ -14,7 +14,7 @@ class CourseVisibility extends MooshCommand
 {
     public function __construct()
     {
-        parent::__construct('create', 'course');
+        parent::__construct('visibility', 'course');
         $this->addArgument('courselist');
         $this->addArgument('visibility');
         $this->maxArguments = 255;

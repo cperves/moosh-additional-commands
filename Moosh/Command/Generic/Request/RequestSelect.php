@@ -32,7 +32,7 @@ class RequestSelect extends MooshCommand {
         $results = $DB->get_records_sql($selectquery);
         $output = '';
         foreach($results as $result) {
-            $output.=explode(';',$result)."\t"."\n";
+            $output.=implode(';',(array) $result)."\n";
         }
         echo $output;
     }
