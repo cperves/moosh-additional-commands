@@ -90,13 +90,13 @@ class PluginHideShow extends MooshCommand
                 require_once($CFG->dirroot.'/question/engine/bank.php');
                 self::hideshow_values_check($show,array(0,1));
                 //check qtype
-                if(!array_key_exists ($pluginname, question_bank::get_all_qtypes())){
+                if(!array_key_exists ($pluginname, \question_bank::get_all_qtypes())){
                     echo "qtype $pluginname does not exist";
                 }
                 if($show==0){
                     set_config($pluginname . '_disabled',1, 'question');
                 }else{
-                    $qtype = question_bank::get_qtype($pluginname,true);
+                    $qtype = \question_bank::get_qtype($pluginname,true);
                     if (!$qtype->menu_name()) {
                         echo "cannot enable qtype $pluginname";
                         break;
