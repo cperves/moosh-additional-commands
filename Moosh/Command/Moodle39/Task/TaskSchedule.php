@@ -29,7 +29,6 @@ class TaskSchedule extends MooshCommand
 
     public function execute()
     {
-        global $DB;
         if(count($this->arguments) == 0){
             $tasks = \core\task\manager::get_all_scheduled_tasks();
             $tasknames = array();
