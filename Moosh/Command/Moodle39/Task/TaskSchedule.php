@@ -35,7 +35,8 @@ class TaskSchedule extends MooshCommand
             foreach($tasks as $currenttask){
                 $tasknames[] = get_class($currenttask);
             }
-            cli_writeln('Available task names are :'.implode(PHP_EOL, $tasknames));
+            cli_writeln('Available task names are :');
+            cli_writeln(implode(PHP_EOL, $tasknames));
             die;
         }
         $taskname = $this->arguments[0];
